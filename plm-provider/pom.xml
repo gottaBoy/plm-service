@@ -26,6 +26,13 @@
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>cn.ibizlab.plugin</groupId>
+            <artifactId>ibiz-plugin-ai</artifactId>
+            <version>${ibiz.cloud.version}</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
      <properties>

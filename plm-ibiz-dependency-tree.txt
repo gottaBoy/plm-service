@@ -1,0 +1,46 @@
+cn.ibizlab.plm:plm-provider:jar:v1.0.2
++- cn.ibizlab.plugin:ibiz-plugin-ai:jar:8.1.0.584.1:runtime
+|  +- cn.ibizlab.plugin:ibiz-cloud-core:jar:8.1.0.584.1:compile
+|  |  \- cn.ibizlab.plugin:ibiz-codegen-core:jar:8.1.0.584.1:compile
+|  +- cn.ibizlab.plugin:ibiz-plugin-groovy:jar:8.1.0.584.1:compile
+|  |  \- cn.ibizlab.plugin:ibiz-codegen-groovy:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-plugin-mcp:jar:8.1.0.584.1:runtime
++- cn.ibizlab.plugin:ibiz-plugin-cloud:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-runtime:jar:8.1.0.584.1:compile
+|     \- cn.ibizlab.plugin:ibiz-model:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-redis:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-mybatisplus-spring-boot-starter:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-plugin-mybatisplus:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-zookeeper:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-poi:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-liquibase:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-elasticsearch:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-kafka:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-quartz:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-rabbitmq:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-mongodb:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-activemq:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-solr:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-python:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibizlab-plugin-groovy:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-plugin-gateway:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-eai:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-psmodel-runtime:jar:8.1.0.584.1:compile
+|  +- cn.ibizlab.plugin:ibiz-psmodel-core:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-model-util:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-jgit:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-neo4j:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-antvg6:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-neo4j-report:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-extension:jar:8.1.0.584.1:compile
+|  \- cn.ibizlab.plugin:ibiz-codegen-template-runtime:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-opml:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-version:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-util:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-wechat:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-open:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-calcite:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-autoconfigure:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-docx4j:jar:8.1.0.584.1:compile
++- cn.ibizlab.plugin:ibiz-plugin-task:jar:8.1.0.584.1:compile
+\- cn.ibizlab.plugin:ibiz-plugin-postgresql:jar:8.1.0.584.1:compile

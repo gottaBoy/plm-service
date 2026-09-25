@@ -131,10 +131,36 @@ git clone https://github.com/ibizlab/plm-code.git
 
 ### 调试启动
 
-环境要求：jdk === 1.8 
+PLM 后端使用 Groovy 2.5，构建应使用 JDK 11。宿主机没有 Maven 时，直接使用仓库脚本：
+
+```sh
+cd plm/backend
+./build-local-image.sh
 ```
-mvn package -Pruntime
+
+脚本会在 `maven:3.9-eclipse-temurin-11` 容器中构建源码，并生成 `aibiz/plmservice:local`。
+
+只构建 jar：
+
+```sh
+docker run --rm --network host \
+  -v "$PWD/../..:/workspace" \
+  -v "$PWD/../../.m2:/root/.m2" \
+  -w /workspace/plm/backend \
+  maven:3.9-eclipse-temurin-11 \
+  mvn -P runtime -DskipTests -Dmaven.test.skip=true package
 ```
+
+使用本地后端镜像时，复用现有 MySQL、Nacos、Redis、ZooKeeper 和 Gateway：
+
+```sh
+cd plm/deploy/compose
+docker compose -f docker-compose-dev.yml \
+  -f docker-compose-plm-local.yml \
+  up -d plmservice
+```
+
+本地覆盖默认关闭 `updatedbschema`，避免已发布 Liquibase 包在 Spring Boot fat jar 中加载 JDBC driver 失败；数据库结构由现有环境维护。
 #编译器中 Run 或 Debug
 `plm-provider/src/main/java/cn/ibizlab/plm/RuntimeApplication.java`
 
@@ -204,4 +230,3 @@ mvn package -Pruntime
 - 💡 用更少的代码完成更强的业务控制逻辑；
 - 🔍 更轻松地调试和运行 `ibiz-service-runner`；
 - 🚀 快速上线基于模型的动态系统。
-
